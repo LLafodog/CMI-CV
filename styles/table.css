@@ -1,0 +1,206 @@
+
+/*********************************************************************************************/
+/******************************************* TABLE *******************************************/
+/* BASIC STYLE */
+@media screen
+{
+	table
+	{
+		/* FONT */
+		color: #FEFEFF;
+		text-shadow: 0px 0px 5px black;
+		/* BORDER */
+		border: darkblue 2px solid; /* all around*/
+		border-radius:1em;
+		/* SPACING */
+		margin:10px auto;
+		padding:10px;
+		/* Background */
+		background: linear-gradient(to bottom, #BBF,#557,  #335);
+		
+	}
+
+	th 
+	{
+		/* FONT */
+		text-align:center;
+		font-weight:bold;
+	}
+	td
+	{
+		/* BORDER */
+		border:1px solid;
+		border-radius:0.5em;
+		border-color: #AAD;
+		padding:0 5px;
+	}
+
+			
+	table a
+	{
+		text-shadow: 0px 0px 15px #FFF;
+	}
+
+/* Essentially cmi.html's table */
+	/* RANk 1 */
+	.t_titleSup
+	{
+		/* FONT */
+		text-align:center;
+		font-weight:bold;
+		color: white;
+		  
+	}
+		.t_titleSup >th
+		{
+			/* BORDER */
+			border: 2px solid;
+			border-radius: 1em;
+			border-color: #558;
+			/* GRADIENT BACKGROUND  */
+			background: linear-gradient(to right,  	rgba(0,0,255,0.3),  	/* 1 */
+													rgba(125,0,255,0.3),	/* 2 */
+													rgba(255,0,255,0.1),	/* 3 */
+													rgba(125,0,255,0.3),	/* 2 */
+													rgba(0,0,255,0.3) );	/* 1 */
+		
+		}
+		
+	/* RANK 2 */
+		.t_title
+		{	
+			/* FONT */
+			text-align:center;
+			color:#55D;
+			text-shadow: 0px 0px 5px pink;
+		}
+			.t_title >td
+			{
+				/* BACKGROUND */
+				background:rgba(210,210,238,0.8);
+				/* BORDER */
+				border: #88A 2px solid;
+				border-radius: 1em;
+			}
+		/*RANK 3 */
+		.t_legend >th
+		{
+			/* NO SPACE */
+			margin:0;
+			padding:0;
+			margin:0;
+			/* FONT SIZE */
+			color:purple;
+			text-shadow:0 0 5px pink;
+		}
+
+
+		.t_cmi
+		{
+			/* FONT */
+			color:#F55;
+			text-shadow:0 0 5px black;
+			font-weight: bold;
+		}
+		
+		.t_cmi > td:first-of-type
+		{
+			/* BACKGROUND IMAGE */
+			background:url(../images/cmi.png) right top;
+		}
+
+		
+		.t_moy
+		{
+			/* FONT */
+			font-style:italic;
+			font-weight:bold;
+			
+			
+		}
+			.t_moy> td:nth-of-type(odd)
+			{
+				/* FONT */
+				text-align:right;
+				background:linear-gradient(to right, darkblue 1%, rgba(100,230,250,0.6)); /*lighter*/
+			}
+			
+			.t_moy> td:nth-of-type(even)
+			{
+				/* FONT */
+				text-align:even;
+				background:linear-gradient(to left, darkblue 1% , rgba(100,230,250,0.6)); /*lighter*/
+			}
+		
+		.t_void
+		{
+			display:none;
+		}
+	@media (min-width:1000px)
+	{
+			
+			
+			
+
+			th 
+			{
+				/* FONT */
+				font-size:16px;
+			}
+			
+
+		/* Essentially cmi.html's table */
+			/* RANk 1 */
+			.t_titleSup
+			{
+				/* FONT */
+				font-size:18px				  
+			}
+			
+			/*RANK 3 */
+			.t_legend >th
+			{
+				/* FONT SIZE */
+				font-size:12px;
+			}
+			
+			.t_moy
+			{
+				/* FONT */
+				font-size:14px;				
+			}
+			
+			.t_void
+			{
+				/* BACKGROUND  */
+				background-color:rgba(0,0,0,0.3)
+			}
+	}
+	
+	@media (max-width:960px) /* = landscape */
+	{
+		/*td:nth-of-type(2),td:nth-of-type(5)*/
+		.t_title~tr:not(.t_moy) td:nth-of-type(2),
+		.t_title~tr:not(.t_moy) td:nth-of-type(5) ,
+		.t_title~tr th:nth-of-type(2),
+		.t_title~tr th:nth-of-type(5),
+		.t_title
+		{
+			display:none;
+		}
+	}
+	
+	@media (max-width:640px) /* = portrait */
+	{
+		table tr {display:none;}
+		.t_title, .t_important, .t_moy ,.t_titleSup
+		{
+			display:block;
+			/* Il y a un bug étrange ici, les semestres pairs n'apparaissent pas, pourtant ils font bien parti des row ci-dessus. Je pense avoir tout tenté sauf la bonne solution qui m'échappe. */
+		}
+		
+	}
+}
+	
+/****************************************** END TABLE ****************************************/
+/*********************************************************************************************/

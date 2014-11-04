@@ -1,0 +1,80 @@
+/*********************************************************/
+/************** PRINTABLE VERSION [ECOLOGIC] *************/
+/*********************************************************/
+
+
+#menu, footer
+{
+display:none;
+}
+
+body
+{
+	width:1000px;
+	padding:15px;
+	font-family:monospace;
+	text-align:justify;
+	border: black 1px  dashed;
+}
+
+body >a
+{
+	display:none; 
+}
+
+img
+{
+	display:none;
+}
+
+h1,h2,h3
+{
+	text-align:center;
+}
+
+h4
+{
+	padding-left:100px;
+}
+
+a
+{
+	text-decoration:none;
+	color:black;
+}
+
+p
+{
+	width:80%;
+	margin: 0 auto;
+	
+}
+/* TABLE */
+table
+{
+	width:100%;
+	margin: 10px auto; 
+	border-collapse:collapse;
+	border: 2px black solid;
+}
+
+table iframe
+{
+	display: none;
+}
+
+th
+{
+	text-align:center;
+}
+
+th,td
+{
+	border: black 1px solid;
+}
+
+.t_titleSup
+{
+	font-size:1.2em;
+	font-weight:bold;
+}

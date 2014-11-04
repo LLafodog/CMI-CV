@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html lang="fr">
+	
+<head>
+	<title>Qui regarde le titre About me ?</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9" /> <!-- Permet la compatibilité IE, trouvé sur ce forum : http://forum.alsacreations.com/topic-4-60511-1-Menu-horizontal---probleme-compatibilite-IE.html -->
+	<meta name="keywords" content="CV numérique, CMI,Curiculum Vitae, License info">
+	<meta name="author" content="Ervan Silvert">
+	<meta name="description" content="Mon CV numérique supposé; après 5 ans de CMI informatique">
+	<meta name="generator" content="Notepad++ 6.6.3">
+		<!-- FICHIERS CSS -->
+		<!-- SCREEN -->
+		<link rel="stylesheet" href="../styles/reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="../styles/default.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="../styles/table.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="../styles/menu.css" type="text/css" media="screen">	
+		<link rel="stylesheet" href="../styles/footer.css" type="text/css" media="screen">	
+		<!-- PRINT -->
+		<link rel="stylesheet" href="../styles/print.css" type="text/css" media="print">
+		
+		<script type="text/javascript">
+		function imprimer_page(){
+		  window.print();
+		}
+		</script>
+</head>	
+
+<body>
+<a href="#menu" title="Accès rapide au haut de page">Haut de page.</a>
+<!-- Ducks everywhere -->
+	<header id="menu">
+			<!-- add a title, a logo etc. -->
+		<h1 id="main_title"> What about me ?  </h1> <!-- ID bien utile ? -->
+		<nav>
+		<!-- Menu  -->
+			<ul id="main_menu">
+				<li>
+					<a href="accueil.html" title="Accueil du site"> Accueil </a>
+				</li>
+				
+				<li>
+					<a href="cv.html" title="Mon CV"> CV </a>
+					<ul class="submenu">
+						<li><a href="cv.html#t_cs"> Ma situation </a>  </li> <!-- Civil state -->
+						<li><a href="cv.html#t_degrees"> Mon savoir professionnel </a>  </li> <!-- Degrees -->
+						<li><a href="cv.html#t_skills"> Mon savoir personnel </a> </li> <!-- knowledge -->
+					</ul>
+				</li>
+				
+				<li>
+					<a href="cmi.html" title="Le Cursus Master en Ingénièrie de Besançon"> CMI </a>  <!-- http://sciences.univ-fcomte.fr/pages/fr/menu3795/formations/cmi-cursus-de-master-en-ingenierie-15940.html -->
+					<ul class="submenu">
+						<li><a href="cmi.html#cmi_description"> Description du Cursus </a>  </li> <!-- cf http over-here -->
+						<li><a href="cmi.html#cmi_marks"> Unités et Résultats </a>  </li> <!-- What did i study and my marks -->
+					</ul>
+				</li>
+				
+				<li>
+					<a href="#"  title="MCette page"> A propos... </a> <!-- Freedom ! DUCKS ! -->
+					<ul class="submenu">
+						<li><a href="about_me.html#fsf"> FSF et moi </a>  </li> <!-- FSF philosophia -->
+						<li><a href="about_me.html#games"> Projets passés </a> </li> <!-- prog & futur -->
+					</ul>
+				</li>
+				
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+	<div id="in">		
+		<article id="fsf">
+			<h2> The Free Software Foundation </h2>
+			<p>
+			<img class="i_banner" src="https://stallman.org/graphics/saint-button.png" width=300 height=150 alt="Bandeau de Saint Emacs"> <!-- Background maybe...-->
+				Le logiciel sous licence propiètaire est le vice absolu du monde informatique. La création de logiciel doit être libre, profiter à tous et encourager les autres à 
+				l'améliorer, à le reprendre et à eux-même publier sous licence libre leur modifications. C'est un cyclone vertueux qui est naît et qui ne cesse de balayer
+				les esprits emprisonnés dans leur béatitude dont l'oeil n'est autre que <a href="http://fr.wikipedia.org/wiki/Richard_Stallman" title="Page de RMS" target="_blank">Richard Matthew Stallman</a>
+				. Fondateur de la FSF, la licence GNU prend aujourd'hui tout son sens, ses protégés se multiplient et le libre croît à en effrayer les plus grands ! 
+				Ne soutenez plus les actions lugubres des grandes firmes qui s'imposent auprès des constructeurs et font payer les distributions libres pour avoir un accès
+				plus aisé auprès de leur UEFI pseudo-sécuritaire.
+				</p>
+		</article>
+		
+		<article id="games">
+			<h2> Des projets inachevés </h2>
+			<h3> Le jeu du kraken</h3>
+			<p>
+				<img class="i_banner" src="../images/kraken.jpg" alt="Screenshot de Kraken's game" width=450 height=350>
+				Le jeu du Kraken est un projet inachevé qui m'a occupé tout l'été 2012. Je voulais faire un premier jeu innovant, sans trop de difficulté afin de mettre en place
+				mon savoir quant à la nouvelle bibliothèque utilisée (SFML). Ca a été génial de le programmer, mais à cette époque je ne savais encore pas coder un bout
+				de programme proprement et commenter comme il faut. 
+				Le principe du jeu réside dans un héros graphique tétra-inexistant (quatre directions mal raccordées) qui vogue sur les océans sur un bateau armé d'explosif à la recherche
+				du kraken. Ce dernier l'attaque aléatoire à une fréquence proportionnelle à le vie lui restant. Appuyer sur espace provoque une charge brève et fait sauter le navire au
+				moindre obstacle, y compris si cet obstacle est le kraken ! Un jeu assez répétitif mais non moins compliqué puisqu'avant de mourir ce dernier se déchaine chaque seconde,
+				laissant le navigateur slalomer entre les tentacules. Le projet fut abandonné à la fin des vacances et laissé avec tous ses bogues.
+			</p>
+			
+			<h3> Le mario like</h3>
+			<p>
+				 <img class="i_banner" src="../images/mario.jpg" alt="Screenshot de Mario Homemade's game" width=800 height=350>
+				Mon tout premier jeu ! Je le voulais complet avec un maximum de difficulté ! Puis les cours sont revenus, la terminale m'a possédé du début à la fin puis un bogue de vitesse
+				incorrigible m'a découragé dans l'idée de le reprendre; ça et le code en pseudo-POO très laid incompréhensible, j'ai meilleur temps d'en refaire un... Et c'est en cours ! 
+				Le concepte et simple, je voulais un moteur audio (bien trop présent pour le coup) qui réagissent aux évènements; résultats tomber dans les pics provoque un bruit de chien qui croque,
+				tombé dans la lave un bruit de boue à bulle etc. Le jeu était très peu drôle à vrai dire, mais le premier Editeur que j'ai fait m'a rendu fier pendant plusieurs semaines, il était 
+				très fonctionnel bien que bogués par un manque de connaissance.
+			</p>
+		</article>
+		
+	</div>
+	</main>
+
+<footer>
+	<a href="#menu" title="Accès rapide au haut de page">Haut de page.</a>
+	<aside>
+		
+		Licence <a href="http://fr.wikipedia.org/wiki/Copyleft" target="_blank"> copyleft </a>
+	</aside>	
+	<ul>
+		<li> Me contacter à <a href="mailto:someone@example.com?Subject=Offre%20d'emploi" target="_top"  title="m'écrire un mail">cette adresse</a>. </li>
+		<li> Rejoindre la FSF <a href="http://www.fsffrance.org/" target="_blank"  title="Site officiel de la FSF">ici</a> ou se renseigner <a href="http://fr.wikipedia.org/wiki/Free_Software_Foundation" target="_blank" title="wiki de la FSF" >là</a> </li>
+		<li> A propos de <a href="https://github.com/DuckAndColvert" target="_blank"  title="Notre studio" >Duck & Colvert</a>
+	</ul>
+	<!-- IMPRESSION, source: http://memo-web.fr/categorie-javascript-222.php -->
+	<form>
+		<input id="impression" name="impression" type="button" onclick="imprimer_page()" value="Imprimer cette page" />
+	</form>
+</footer>
+
+</body>
+
+</html>

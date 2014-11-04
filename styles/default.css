@@ -1,0 +1,259 @@
+@media screen
+{
+/**********************************/
+/***************** COMMON *********/
+/**********************************/
+
+
+	/* LISTS */
+		ul
+		{
+		list-style:none;
+		}
+	/* MAIN PART */
+		body
+		{
+			/* FONT */
+			font-family : Times New Roman, Times, serif;
+			font-size:13.5px;
+			text-align:justify;
+			/* SIZE */
+			margin: 20px auto;
+			padding: 20px 10px;
+			/* BACKGROUND */
+			/*background:linear-gradient(to bottom, grey, white , grey);*/
+			background:url(../images/background.jpg);
+			background-size:contain;
+			
+		}
+		
+		body > a
+		{
+			position:fixed;
+			left:0;
+			top:0;
+			font-size:24px;
+			color: white;
+			text-decoration:none;
+		}
+	
+	
+	
+		#in 
+		{
+			/* BACKGROUND */
+			background-color:rgba(255,255,255,0.1);
+			/* BORDER */
+			border: rgba(255,255,255,0.2) 2px solid;
+			border-radius:2em;
+			/* PLACING */
+			padding:10px;
+			/* FONT */
+			text-shadow:0px  0px 12px white;
+		}
+		
+		h2
+		{
+			text-shadow:2px 2px 2px black;
+			color: pink;
+		}
+		
+		h3
+		{
+			border: 1px rgba(200,200,200,0.2) solid ;
+			border-radius: 1em;
+			padding-left:10px;
+			color: #121;
+			background: linear-gradient( to bottom, rgba(0,100,255,0.1),rgba(0,200,255,0.1));
+			text-align:center;
+		}
+		
+		h4
+		{
+			text-shadow:0px 0px 5px black;
+			color: white;
+			font-style:italic;
+		}
+		/* ======== HYPERTEXT ======== */
+			main a, header a, footer a
+			{
+				text-decoration:none;
+				font-style: italic;
+				padding:0;
+				color: pink;
+				transition: padding 1s;
+			}
+
+			main a:visited , header a:visited, footer a:visited
+			{
+				color:purple; /* Darker */
+			}
+
+			main a:active, header a:active, footer a:active
+			{
+				font-size:80%;
+				color:yellow;
+			}
+
+			/* EXTERNES */
+			* a[href^="http://"]:hover,* a[href^="https://"]:hover
+			{
+				padding-right:10px;
+				padding-top:20px;
+				background:url(../images/ext.gif) no-repeat right center;
+			}
+		/* ======== PARAGRAPHES ===== */
+		#in p
+		{
+			color: #211;
+			/* BORDER */ 
+			border-radius: 13px 77px 14px 30px;
+			-moz-border-radius: 13px 77px 14px 30px;
+			-webkit-border-radius: 13px 77px 14px 30px;
+			border: 1px solid black ;
+			/* SPACING */
+			margin: 10px;
+			padding: 15px;
+			padding-right:25px;
+			overflow:auto;
+			/* SHADOW */
+			box-shadow: 5px 5px 10px black;
+			/* BACKGROUND */
+			background:linear-gradient(to bottom, rgba(100,100,150,0.6), rgba(180,180,210,0.3));
+			
+		}
+		/* ======== ARTCILE ======= */
+		article
+		{
+			/* BORDER */
+			border-radius: 60px 11px 60px 11px;
+			-moz-border-radius: 60px 11px 60px 11px;
+			-webkit-border-radius: 60px 11px 60px 11px;
+			border: 2px solid black;
+			/* SPACING */
+			padding:15px;
+			margin: 10px;
+			overflow:auto;
+			/* SHADOW */
+			box-shadow: 5px 5px 10px ;
+			/* BACKGROUND */
+			background: linear-gradient(to bottom, rgba(100,100,100,0.8), rgba(180,180,255,0.7) );
+			
+		}
+
+
+	
+	/* ======== AT LEAST 1000 PX ============= */
+	@media (min-width:960px)
+	{
+		body
+		{
+			/* SIZE */
+			width:1000px;
+			
+		}
+
+			
+			/* ========= IMAGES ============= */
+			.i_banner
+			{
+				width: 100%;
+				max-height:10%;
+				border: lightgrey 2px solid;
+				border-radius: 2em;
+				padding: auto;
+				margin: 0 auto;
+				background-color: rgba(255,255,255,0.3);
+				
+			}
+			p img
+			{
+				margin: 0 auto;
+			}
+			
+			/* ======= STYLES ===== */
+			.true
+			{
+				display:block;
+			}
+			
+			.false
+			{
+				display:none;
+			}
+			
+			.true:hover ~.false
+			{
+				display:block;
+			}
+			
+			.true:hover
+			{
+				display:none;
+			}
+	} /* END 1000px */
+
+	@media (max-width:960px) /* = landscape */
+	{
+		body
+		{
+			/* SIZE */
+			width:800px;
+		}
+
+			
+			/* ========= IMAGES ============= */
+			.i_banner
+			{
+				width: 80%;
+				max-height:10%;
+				border: lightgrey 2px solid;
+				border-radius: 2em;
+				padding: auto;
+				margin: 0 auto;
+				background-color: rgba(255,255,255,0.3);
+				
+			}
+			p img
+			{
+				margin: 0 auto;
+			}
+			
+			/* ======= STYLES ===== */
+			
+			.false
+			{
+				display:block;
+			}
+			
+			.true
+			{
+			display:none;
+			}
+	
+	
+	
+	}
+	
+	@media (max-width:640px) /* = portrait */
+	{
+		body
+		{
+			width:500px;
+		}
+		img
+		{
+			display:none;
+		}
+	}
+	
+	
+	
+} /* END SCREEN */	
+			
+			
+			
+			
+
+
+

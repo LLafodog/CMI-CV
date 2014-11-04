@@ -1,0 +1,275 @@
+/**************************************/
+/********* MENU CSS ********************/
+/**************************************/
+@media screen 
+{
+	
+	* html #menu li {float:left;} /* Est supposé faire comprendre le message seulement à IE (source:http://openclassrooms.com/courses/les-hacks-css-pour-internet-explorer)*/
+	
+	
+	#menu
+		{
+			/* SIZING */
+			margin: 0 auto;
+			margin-bottom:100px;
+			padding-bottom:20px;
+			width:80%;
+			/* BACKGRoUND */
+			background-color:rgba(255,255,255,0.3);
+			/* BORDER */
+			border: white 1px solid;
+			border-radius:2em;
+		}
+	#menu a
+		{
+			display:block;
+			color:lightgrey;
+		}
+		
+	/* ========= TITLE ======== */
+	#main_title
+		{
+			/* SIZE */
+			width:100%;
+			/* FONT */
+			font-family:monospace;
+			text-align:center;
+			color: pink;
+			/* PLACING */
+			margin: 0 auto;
+			padding-top:20px;
+			/* BACKGROUND */	
+			text-shadow:1px 1px 1px red;
+		}
+	
+	#main_menu > li
+			{
+				/* FONT */
+				text-align:center;
+				font-family:monospace;	
+				/* POSITION */
+				margin:0 5px;
+				margin-top:0px;
+				padding:5px;
+				/* Background */
+				background-color:rgba(0,0,0,0.3);
+				/* BORDER */
+				border: black 1px solid;
+				border-radius:0.5em;
+				/* SHADOW */
+				box-shadow: 0px 2px 2px black;
+			}
+	
+	
+	/* SCREEN OVER 1000 PX */
+	@media (min-width:960px)
+	{
+		/* ======== HEADER =====*/
+			#menu
+			{
+				height:200px;
+				/* TRANSITION */
+					/*Property*/
+					transition-property:background-color, width;
+					
+					-webkit-transition-property:background-color, width;
+					-moz-transition-property:background-color, width;
+					-ms-transition-property:background-color, width;
+					-o-transition-property:background-color, width;
+					/*Duration*/
+					transition-duration:1s;
+					-webkit-transition-duration:1s;
+					-moz-transition-duration:1s;
+					-ms-transition-duration:1s;
+					-o-transition-duration:1s;
+			}
+
+			#menu:hover
+			{
+				width:100%;
+				background-color:rgba(210,210,255,0.5);
+			}
+
+		/* ========= HYPERTEXT ====== */
+			#menu a
+			{
+				/*TRANSITION*/
+					/*Property*/
+					transition-property: color;
+					-webkit-transition-property: color;
+					-moz-transition-property: color;
+					-ms-transition-property: color;
+					-o-transition-property: color;
+					/* Duration*/
+					transition-duration: 1s;
+					-webkit-transition-duration: 1s;
+					-moz-transition-duration: 1s;
+					-ms-transition-duration: 1s;
+					-o-transition-duration: 1s;
+			}
+
+			#menu a:hover
+			{
+				color:pink;
+			}
+
+		/* ========= TITLE ======== */
+			#main_title
+			{
+				/* FONT */
+				font-size:26px;
+			}
+		/*===============HORIZONTAL MENU ==============*/
+			#main_menu > li
+			{
+				/* FONT */
+				font-size:22px;
+				/* POSITION */
+				float: left;
+				margin:0 5px;
+				width:20%;	
+				margin-top:0px;
+				/* TRANSITION */
+					/* Property*/
+					transition-property: width, background-color, border-color;
+					-webkit-transition-property: width, background-color, border-color;
+					-moz-transition-property: width, background-color, border-color;
+					-ms-transition-property: width, background-color, border-color;
+					-o-transition-property: width, background-color, border-color;
+					/* Duration*/
+					transition-duration:2s;
+					-webkit-transition-duration:2s;
+					-moz-transition-duration:2s;
+					-ms-transition-duration:2s;
+					-o-transition-duration:2s;
+					
+				padding:5px;
+			}
+
+			#main_menu > li:hover /* Make the li selected bigger and upper */
+			{
+				width:25%;
+				background-color:rgba(0,0,0,0.6);
+				border-color:black;
+			}
+		/*===============VERTICAL MENU ==============*/
+			.submenu
+			{
+				display:none;
+			}
+
+			#main_menu>li:hover .submenu
+			{
+				display:block;
+				
+			}
+
+			.submenu >li
+			{
+				text-align:right;
+				font-size:14px;
+				padding:0;
+				right:0;
+				/* TRANSITION*/
+					/* Property*/
+					transition-property: padding;
+					-webkit-transition-property: padding;
+					-moz-transition-property: padding;
+					-ms-transition-property: padding;
+					-o-transition-property: padding;
+					/* Duration*/
+					transition-duration: 2s;
+					-webkit-transition-duration: 2s;
+					-moz-transition-duration: 2s;
+					-ms-transition-duration: 2s;
+					-o-transition-duration: 2s;				
+
+			}
+
+			.submenu >li:first-of-type
+			{
+				border-top:1px lightgrey solid;
+			}
+			
+			.submenu:hover li:hover /* Make the text centered when the mouse is over */
+			{
+				padding:20px 0;
+			}
+		
+	}	
+	/* SCREEN BETWEEN 500 AND 1000 PX */
+	@media (max-width: 960px) /* = landscape */
+	{
+		/* ======== HEADER =====*/
+			#menu
+			{
+				/* SIZING */
+				margin: 0 auto;
+				margin-bottom:100px;
+				padding-bottom:20px;
+				height:200px;
+				width:100%
+				/* BACKGRoUND */
+				background-color:rgba(255,255,255,0.3);
+				/* BORDER */
+				border: white 1px solid;
+				border-radius:2em;
+			}
+
+		/* ========= HYPERTEXT ====== */
+			#menu a
+			{
+				display:block;
+				color:lightgrey;
+			}
+
+		/*===============HORIZONTAL MENU ==============*/
+			#main_menu > li
+			{
+				/* FONT */
+				font-size:12px;
+				/* POSITION */
+				float: left;
+				width:20%;	
+				padding:2px;
+				/* Background */
+				background-color:rgba(0,0,0,0.3);
+				/* BORDER */
+				border: black 1px solid;
+				border-radius:0.5em;
+				/* SHADOW */
+				box-shadow: 0px 2px 2px black;
+			}
+		
+		/*===============VERTICAL MENU ==============*/
+			.submenu
+			{
+				display:block;
+			}
+			.submenu >li
+			{
+				text-align:center;
+				font-size:10px;
+				padding:0;
+				right:0;
+				border-top:1px lightgrey solid;
+			}
+			
+			
+	}
+	
+	@media (max-width: 640px) /* = portrait */
+	{
+		
+		.submenu
+		{
+			display:none;
+		}
+		#main_menu li
+		{
+			position:static;
+			width:90%;
+		}
+	}
+	
+}
